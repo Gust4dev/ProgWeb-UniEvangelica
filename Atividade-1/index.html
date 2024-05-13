@@ -4,3 +4,72 @@
 * Dev: Gustavo Gomes dos Santos - 2111267
 * 12/05/2024
 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Criação de Conta</title>
+    <!-- import bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- link para css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h2 class="text-center mt-5 mb-4">Create Account Form</h2>
+          <!-- formulario -->
+          <form>
+            <div class="mb-3">
+              <!-- label e inputs dos dados -->
+              <label for="nome" class="form-label">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nome"
+                placeholder="Digite seu nome"
+              />
+            </div>
+            <!-- Campo: Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Digite seu email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="senha" class="form-label">Senha</label>
+              <input
+                type="password"
+                class="form-control"
+                id="senha"
+                placeholder="Digite sua senha"
+              />
+            </div>
+            <!-- confirmar senha -->
+            <div class="mb-3">
+              <label for="confirmarSenha" class="form-label"
+                >Confirmar Senha</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="confirmarSenha"
+                placeholder="Confirme sua senha"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Criar Conta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
