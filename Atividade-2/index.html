@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VueJS To-Do List</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="script.js" defer></script>
+    <!-- link para o script -->
+  </head>
+  <body>
+    <div id="app">
+      <h1>To-Do List</h1>
+      <input type="text" v-model="newTask" @keyup.enter="addTask" />
+      <button @click="addTask">Adicionar Tarefa</button>
+
+      <ul class="task-list">
+        <li v-for="(task, index) in tasks" :key="index" class="task">
+          <span :class="{ completed: task.completed }">{{ task.name }}</span>
+          <button @click="completeTask(index)">Concluir</button>
+          <button @click="removeTask(index)">Remover</button>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .task-list {
+      margin-top: 20px;
+    }
+    .task {
+      margin-bottom: 10px;
+    }
+    .completed {
+      text-decoration: line-through;
+    }
+  </style>
+</html>

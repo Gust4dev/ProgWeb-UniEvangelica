@@ -1,0 +1,78 @@
+<!-- 
+* Curso de Engenharia de Software - UniEVANGÉLICA 
+* Disciplina de Programação Web 
+* Dev: Gustavo Gomes dos Santos - 2111267
+* 12/05/2024 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Criação de Conta</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- link para css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center vh-100"
+    >
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h2 class="card-title text-center mb-4">Criar Conta Online</h2>
+            <form>
+              <div class="form-group mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nome"
+                  placeholder="Digite seu nome"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Digite seu email"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="senha"
+                  placeholder="Digite sua senha"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="confirmarSenha" class="form-label"
+                  >Confirmar Senha</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="confirmarSenha"
+                  placeholder="Confirme sua senha"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Criar Conta
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
